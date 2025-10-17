@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Português e Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz de Português e Matemática</h1>
+        <div id="inicio">
+            <label for="nome">Digite seu nome:</label>
+            <input type="text" id="nome" placeholder="Seu nome">
+            <button onclick="iniciarQuiz()">Iniciar Quiz</button>
+        </div>
+
+        <div id="quiz" style="display: none;">
+            <h2 id="pergunta"></h2>
+            <div id="alternativas"></div>
+            <div id="resultado"></div>
+        </div>
+
+        <div id="ranking" style="display: none;">
+            <h2>Ranking</h2>
+            <ul id="rankingList"></ul>
+        </div>
+    </div>
+
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
